@@ -2,7 +2,7 @@
 
 using namespace std;
 
-// Backjoon 11718 ±×´ë·Î Ãâ·ÂÇÏ±â(https://www.acmicpc.net/problem/11718)
+// Backjoon 11718 ê·¸ëŒ€ë¡œ ì¶œë ¥í•˜ê¸°(https://www.acmicpc.net/problem/11718)
 int main()
 {
     const int LINE_SIZE = 101;
@@ -12,7 +12,7 @@ int main()
     {
         cin.getline(line, LINE_SIZE);
         
-        if (cin.eof()) // cin.clear() ¾ø¾Ö´Ï ¼º°ø
+        if (cin.eof()) // cin.clear() ì—†ì• ë‹ˆ ì„±ê³µ
             break;
 
         cout << line << endl;
