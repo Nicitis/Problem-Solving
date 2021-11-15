@@ -1,12 +1,10 @@
 // 백준 1260: DFS와 BFS(C++)
-/*
 // 인접 행렬 풀이 방법
 #include <cstdio>
 #include <queue>
 
 bool matrix[1001][1001];
 bool visit[1001];
-
 
 void initialize_visit(int n)
 {
@@ -79,8 +77,8 @@ int main()
     initialize_visit(n);
     print_bfs(v, n);
 }
-*/
 
+/*
 // 인접 리스트 풀이방법
 #include <cstdio>
 #include <cstring>
@@ -163,3 +161,4 @@ int main()
     memset(visit, (int)false, sizeof(bool) * 1001);
     print_bfs(v, n);
 }
+*/
