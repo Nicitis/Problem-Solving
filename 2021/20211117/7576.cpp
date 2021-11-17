@@ -1,7 +1,7 @@
 // 백준 7576: 토마토(C++)
 // 그래프 문제
 // 각 토마토 위치마다 익는 데에 걸리는 시간을 기록한다.
-// dfs로 토마토가 익는 최소 기간을 기록
+// bfs로 토마토가 익는 최소 기간을 기록
 #include <cstdio>
 #include <cstring>
 #include <queue>
