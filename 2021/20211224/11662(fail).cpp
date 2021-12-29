@@ -1,4 +1,4 @@
-// 백준 11662 민호와 강호(CPP)
+// 백준 11662 민호와 강호(CPP) (못품)
 // https://m.blog.naver.com/PostView.nhn?blogId=kks227&logNo=221432986308&proxyReferer=https:%2F%2Fwww.google.com%2F
 #include <iostream>
 #include <cmath>
