@@ -11,7 +11,7 @@ using namespace std;
 
 vector<pair<int, int>> points;
 
-int GetDistance(pair<int, int> point1, pair<int, int> point2)
+int GetSqrDistance(pair<int, int> point1, pair<int, int> point2)
 {
     return (point2.first - point1.first) * (point2.first - point1.first) +
         (point2.second - point1.second) * (point2.second - point1.second);
@@ -44,7 +44,7 @@ int GetNearestDistance(int start, int end)
 {
     if (start + 1 == end)
     {
-        return GetDistance(points[start], points[end]);
+        return GetSqrDistance(points[start], points[end]);
     }
 
     // 왼쪽 오른쪽 분할
@@ -67,7 +67,7 @@ int GetNearestDistance(int start, int end)
         {
             // x의 차가 최단 거리보다 작은 점에 대해서만 검사한다.(시간초과 발생)
             if ((points[r].first - points[l].first) * (points[r].first - points[l].first) < minDist)
-                minDist = MIN(minDist, GetDistance(points[l], points[r]));
+                minDist = MIN(minDist, GetSqrDistance(points[l], points[r]));
             else
                 break;
             r++;
