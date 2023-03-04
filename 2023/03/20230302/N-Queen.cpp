@@ -1,3 +1,4 @@
+// 2023.03.02., N-Queen, https://school.programmers.co.kr/learn/courses/30/lessons/12952
 #include <string>
 #include <vector>
 #include <iostream>
