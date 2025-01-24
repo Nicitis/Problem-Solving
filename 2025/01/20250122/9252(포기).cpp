@@ -38,7 +38,7 @@ int main()
                 temp[j] = longestPrevPos + 1;
                 if (prev != 0)
                     prevpos[j] = longestPrevPos;
-                if ()
+                // if ()
             }
             // 다르면, 이전 문자 temp와 현재 lcs 중 비교
             else if (j != 0 && temp[j - 1] > lcs[j])
