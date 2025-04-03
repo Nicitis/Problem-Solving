@@ -139,7 +139,7 @@ int main()
     {
         cin >> avg;
         multipliers.push_back(FindMinimumMultiplier(avg));
-        // cout << i+1 << "th multiplier : " << multipliers[i] << "\n";
+        cout << i+1 << "th multiplier : " << multipliers[i] << "\n";
     }
 
     int allLcd = multipliers[0];
