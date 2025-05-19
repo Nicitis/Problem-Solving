@@ -26,7 +26,7 @@ int modInverse(int a, int m)
             // "/ old_x, x = " << old_x << ", " << x << "\n";
     }
 
-    // µÎ ¼ö°¡ ¼­·Î¼ÒÀÏ ¶§¸¸ ¿ª¿ø ¹İÈ¯
+    // ë‘ ìˆ˜ê°€ ì„œë¡œì†Œì¼ ë•Œë§Œ ì—­ì› ë°˜í™˜
     if (a != 1)
         return -1;
 
@@ -60,12 +60,12 @@ int main()
     for (int i = 0; i < 3; i++)
     {
         // 1. ni = n / pi
-        // 2. yi´Â pi¿¡ ´ëÇÑ niÀÇ ¸ğµâ·¯ ¿ª¿ø
-        // Áï, (ni * yi) mod pi = 1
+        // 2. yiëŠ” piì— ëŒ€í•œ niì˜ ëª¨ë“ˆëŸ¬ ì—­ì›
+        // ì¦‰, (ni * yi) mod pi = 1
         // 3. x = sum(x_i * ni * yi)
         int ni = n / p[i];
         int yi = modInverse(ni, p[i]);
-        // cout << p[i] << "¿¡ ´ëÇÑ ni(" << ni << ")ÀÇ ¿ª¿øÀº " << yi << "\n";
+        // cout << p[i] << "ì— ëŒ€í•œ ni(" << ni << ")ì˜ ì—­ì›ì€ " << yi << "\n";
         if (yi == -1)
         {
             cout << "-1";
